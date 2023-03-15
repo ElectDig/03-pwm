@@ -4,7 +4,7 @@
 
 ##  Using a potentiometer connected to the A/D converter, changes LED brightness (PWM)
 
-    IntroCom - Austral - 2022 - EAM
+    Electronica Digital - Austral - 2023 - EAM
     Uses ESP32 microcontroller
 
 
