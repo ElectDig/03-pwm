@@ -17,6 +17,7 @@
 
     Connect potentiometer ends between GND and 3.3 volt
     Connect potentiometer cursor to GPIO "ANAIN" (see platformio.ini)
+
     Connect LED anode to GPIO "LED1"
     Connect LED cathode to one end of 220 ohm
     Connect other end of resistor 220 ohm to GND
@@ -24,15 +25,12 @@
 ###  Verification
 
     As you change potentiometer form one end to the other, serial monitor
-    shows converted value and how LED change brightness
+    shows converted value and LED change brightness
 
 ###  Links
 
+[ESP32 PWM Example: How To Use PWM On An ESP32 Microcontroller](https://www.kompulsa.com/esp32-pwm-example-how-to-use-pwm-on-an-esp32-microcontroller/)
+
 [Electronics Hub - In-depth ESP32 PWM Tutorial | How to use PWM in ESP32?](https://www.electronicshub.org/esp32-pwm-tutorial/)
-
-[Circuit Digest - ESP32 PWM Tutorial: Controlling the Brightness of LED](https://circuitdigest.com/microcontroller-projects/esp32-pwm-tutorial-controlling-brightness-of-led)
-
-
-
 
 
