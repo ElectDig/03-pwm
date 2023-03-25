@@ -1,6 +1,6 @@
 /*
  *      Project 03-pwm
- *      Using a potetiometer connected to the A/D converter, changes LED brightness (PWM)
+ *      Using a potentiometer connected to the A/D converter, changes LED brightness (PWM)
  *
  *      main.cpp
  */
@@ -39,8 +39,7 @@ setup(void)
 {
     Serial.begin(SERIAL_BAUD);
     ledcSetup(LED_CHANNEL, FREQ, RESOLUTION);
-    // attach the channel to the GPIO to be controlled
-    ledcAttachPin(LED1, LED_CHANNEL);
+    ledcAttachPin(LED1, LED_CHANNEL);    // attach the channel to the GPIO to be controlled
     time_print = TIME_PRINT/LOOP_DELAY;
 }
 
@@ -51,7 +50,7 @@ loop(void)
 
     sensorValue = analogRead(ANAIN);
     ledcWrite(LED_CHANNEL, sensorValue);
-    if( time_print-- == 0 )
+    if( time_print-- == 0 )             //  print only after TIME_PRINT ms
     {
         time_print = TIME_PRINT/LOOP_DELAY;
         Serial.println(sensorValue);
