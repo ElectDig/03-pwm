@@ -39,7 +39,7 @@ setup(void)
 {
     Serial.begin(SERIAL_BAUD);
     ledcSetup(LED_CHANNEL, FREQ, RESOLUTION);
-    ledcAttachPin(LED1, LED_CHANNEL);    // attach the channel to the GPIO to be controlled
+    ledcAttachPin(LED, LED_CHANNEL);    // attach the channel to the GPIO to be controlled
     time_print = TIME_PRINT/LOOP_DELAY;
 }
 
